@@ -1,0 +1,54 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 327px;
+    margin-inline: auto;
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    &__input {
+        height: 45px;
+        border-radius: 8px;
+        padding: 16px;
+        border: 1px solid var(--light-grey);
+    }
+
+    &__boxinfo {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 8px;
+    }
+
+    &__dates {
+        display: flex;
+        gap: 8px;
+    }
+
+    &__date {
+        height: 45px;
+        width: 72px;
+        border-radius: 8px;
+        padding: 16px;
+        border: 1px solid var(--light-grey);
+    }
+
+    &__cvc {
+        height: 45px;
+        width: 164px;
+        border-radius: 8px;
+        padding: 16px;
+        border: 1px solid var(--light-grey);
+    }
+
+    &__submit {
+        width: 100%;
+        height: 53px;
+        border-radius: 8px;
+        background-color: var(--deep-violet);
+    }
+}

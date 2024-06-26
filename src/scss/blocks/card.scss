@@ -1,0 +1,68 @@
+.card {
+    position: relative;
+    background-image: url(../../assets/images/bg-main-mobile.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 240px;
+    margin-bottom: 5rem;
+    color: var(--white);
+
+    &__back {
+        position: absolute;
+        top: 2rem;
+        right: 1rem;
+        background-image: url(../../assets/images/bg-card-back.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17.875rem;
+        height: 9.8125rem;
+    }
+    
+    &__cvc {
+        position: absolute;
+        top: 4.5625rem;
+        right: 2.1875rem;
+        font-size: 0.5625rem;
+        font-weight: 500;
+        letter-spacing: 0.0804rem;
+    }
+
+    &__front {
+        top: 7.8125rem;
+        left: 1rem;
+        position: absolute;
+        background-image: url(../../assets/images/bg-card-front.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 17.875rem;
+        height: 9.8125rem;
+    }
+
+    &__number {
+        position: absolute;
+        top: 5.3125rem;
+        left: 1.1875rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+        letter-spacing: 0.1375rem;
+    }
+
+    &__name {
+        position: absolute;
+        top: 7.8125rem;
+        left: 1.1875rem;
+        font-size: 0.5625rem;
+        font-weight: 500;
+        letter-spacing: 0.0804rem;
+    }
+
+    &__expdate {
+        position: absolute;
+        top: 7.8125rem;
+        right: 1.3125rem;
+        margin: 0;
+        font-size: 0.5625rem;
+        font-weight: 500;
+        letter-spacing: 0.0804rem;
+    }
+}
