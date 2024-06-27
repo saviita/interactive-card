@@ -1,11 +1,22 @@
+@use '../mixins/responsive.scss' as *;
+
 .card {
-    position: relative;
     background-image: url(../../assets/images/bg-main-mobile.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 240px;
     margin-bottom: 5rem;
     color: var(--white);
+
+    @include responsive (desktop) {
+        display: flex;
+        align-items: center;
+        background-image: url(../../assets/images/bg-main-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 483px;
+        height: 900px;
+    }
 
     &__back {
         position: absolute;
@@ -16,6 +27,11 @@
         background-repeat: no-repeat;
         width: 17.875rem;
         height: 9.8125rem;
+
+        @include responsive (desktop) {
+            top: 2rem;
+            left: 2rem;
+        }
     }
     
     &__cvc {
@@ -36,6 +52,11 @@
         background-repeat: no-repeat;
         width: 17.875rem;
         height: 9.8125rem;
+
+        @include responsive (desktop) {
+            top: 1rem;
+            left: 1rem;
+        }
     }
 
     &__number {
@@ -64,5 +85,16 @@
         font-size: 0.5625rem;
         font-weight: 500;
         letter-spacing: 0.0804rem;
+    }
+}
+
+.cards {
+    position: relative;
+    max-width: 350px;
+    margin-inline: auto;
+
+    @include responsive (desktop) {
+        max-width: 541px;
+        margin-block: auto;
     }
 }
