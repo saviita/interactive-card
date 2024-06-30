@@ -1,15 +1,4 @@
 .error {
-    &__empty {
-        display: none;
-    }
-
-    &__short {
-        display: none;
-    }
-
-    &__format {
-        display: none;
-    }
 
     &__input {
         border: 1px solid var(--red);
